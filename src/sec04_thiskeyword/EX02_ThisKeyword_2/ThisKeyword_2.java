@@ -1,30 +1,25 @@
 package sec04_thiskeyword.EX02_ThisKeyword_2;
 
+/*명시적 this 키워드 추가 */
 
 class A {
 	int m;
-	int n;
-	
+	int n;	
 	void init(int m, int n) {
 		m=m; 
 		n=n; 
 	}
 }
-
 class B {
 	int m;
-	int n;
-	
+	int n;	
 	void init(int m, int n) {
 		this.m=m; 
 		this.n=n; 
 	}
 }
-
-
 public class ThisKeyword_2 {
-	public static void main(String[] args) {
-		
+	public static void main(String[] args) {		
 		//#1. 필드명과 지역변수 명이 같은 경우 (this 키워드를 사용하지 않은 경우)
 		A a = new A();
 		a.init(2,3);

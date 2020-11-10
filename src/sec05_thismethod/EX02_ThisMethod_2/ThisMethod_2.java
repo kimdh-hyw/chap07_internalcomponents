@@ -1,6 +1,6 @@
 package sec05_thismethod.EX02_ThisMethod_2;
 
-//this(생성자 매개변수) 활용
+/*this(생성자 매개변수) 활용*/
 
 class A {
 	int m1, m2, m3, m4;
@@ -28,10 +28,8 @@ class A {
 		System.out.print(m3+" ");
 		System.out.print(m4);	
 		System.out.println();
-	}
-	
+	}	
 }
-
 class B {
 	int m1, m2, m3, m4;
 	B() {
@@ -46,11 +44,10 @@ class B {
 	}
 	B(int a, int b) {
 		this(a);
-		m2 = b;
-		
-//		this();
-//		m1 = a;
-//		m2 = b;
+		m2 = b;		
+		//this();
+		//m1 = a;
+		//m2 = b;
 	}
 	void print() {
 		System.out.print(m1+" ");
@@ -58,31 +55,24 @@ class B {
 		System.out.print(m3+" ");
 		System.out.print(m4);	
 		System.out.println();
-	}
-	
+	}	
 }
-
-
 public class ThisMethod_2 {
 	public static void main(String[] args) {
-		
-		
 		//#1. 세가지 객체 생성 (this() 미사용)
 		A a1 = new A(); 
 		A a2 = new A(10);
-		A a3 = new A(10,20);
-		
+		A a3 = new A(10,20);		
 		a1.print();
 		a2.print();
 		a3.print();
 		
-		
+		System.out.println();
 		
 		//#2. 세가지 객체 생성 (this() 사용)
 		B b1 = new B(); 
 		B b2 = new B(10);
-		B b3 = new B(10,20);
-		
+		B b3 = new B(10,20);		
 		b1.print();
 		b2.print();
 		b3.print();

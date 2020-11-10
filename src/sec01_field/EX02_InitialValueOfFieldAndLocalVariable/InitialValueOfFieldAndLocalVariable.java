@@ -1,5 +1,7 @@
 package sec01_field.EX02_InitialValueOfFieldAndLocalVariable;
 
+/*필드와 지역변수의 초기값*/
+
 //#1 클래스 생성(정의)
 class A {
 	boolean m1;

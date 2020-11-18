@@ -45,10 +45,14 @@ class B {
 	B(int a, int b) {
 		this(a);
 		m2 = b;		
-		//this();
-		//m1 = a;
-		//m2 = b;
 	}
+	/* 첫번째 생성자 호출 + 두개의 코드 추가
+	B(int a, int b) {
+		this();
+		m1 = a;
+		m2 = b;
+	}
+	*/	
 	void print() {
 		System.out.print(m1+" ");
 		System.out.print(m2+" ");

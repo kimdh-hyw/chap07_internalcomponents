@@ -25,7 +25,6 @@ class A {
 		System.out.println(m+"월입니다.");
 	}	
 }
-
 public class ExternalCallMethods {
 	public static void main(String[] args) {		
 		//#2. 객체생성

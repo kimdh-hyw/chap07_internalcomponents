@@ -16,26 +16,32 @@ public class FlexibleSizeArrayArgument {
 	}	
 	public static void method1(int...values) { //가변길이 배열
 		System.out.println("배열의 길이: " + values.length);
-		
-		//for(int i=0; i<values.length; i++) {
-		//	System.out.print(values[i]+" ");
-		//}
+		/* 배열 출력 방법 1
+		for(int i=0; i<values.length; i++) {
+			System.out.print(values[i]+" ");
+		} */
+		// 배열 출력 방법 2
 		for(int k: values) {
 			System.out.print(k+" ");
 		}
+		/* 배열 출력 방법 3
 		//System.out.println(Arrays.toString(values));
+		 */
 		System.out.println();		
 	}	
 	public static void method2(String...values) { //가변길이 배열
-		System.out.println("배열의 길이: " + values.length);
-		
-		//for(int i=0; i<values.length; i++) {
-		//	System.out.print(values[i]+" ");
-		//}
+		System.out.println("배열의 길이: " + values.length);		
+		/* 배열 출력 방법 1
+		for(int i=0; i<values.length; i++) {
+			System.out.print(values[i]+" ");
+		} */
+		// 배열 출력 방법 2
 		for(String k: values) {
 			System.out.print(k+" ");
 		}
+		/* 배열 출력 방법 3
 		//System.out.println(Arrays.toString(values));
+		 */
 		System.out.println();		
 	}	
 }

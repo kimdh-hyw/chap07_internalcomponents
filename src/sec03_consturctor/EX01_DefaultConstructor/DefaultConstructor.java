@@ -33,8 +33,7 @@ class C {
 	}
 }
 public class DefaultConstructor {
-	public static void main(String[] args) {
-		
+	public static void main(String[] args) {		
 		//#1. 클래스의 객체 생성
 		A a = new A();
 		B b = new B();

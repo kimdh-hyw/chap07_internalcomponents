@@ -11,9 +11,11 @@ class A {
 		this(); //생성자의 첫줄에만 올 수 있다. 
 		System.out.println("두번째 생성자");
 	}
-//	void abc() {
-//		this(); //불가능
-//	}
+	/* 메서드에서는 this() 메서드 사용 불가 
+	void abc() {
+		this(); //불가능
+	}
+    */
 }
 public class ThisMethod_1 {
 	public static void main(String[] args) {		

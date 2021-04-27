@@ -33,6 +33,7 @@ public class ExternalCallMethods {
 		//#3. 메서드 호출 (멤버활용)
 		a.print();					//안녕		
 		int k = a.data();
+		a.data();
 		System.out.println(k);		//3		
 		double result = a.sum(3, 5.2);
 		System.out.println(result);	//8.2		
@@ -40,28 +41,3 @@ public class ExternalCallMethods {
 		a.printMonth(15); 			//잘못된 입력
 	}
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

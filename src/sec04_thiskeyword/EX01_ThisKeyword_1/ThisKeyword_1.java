@@ -9,11 +9,11 @@ class A {
 	void init(int a, int b) {
 		int c;
 		c=3;
-		m=a; //this.m
-		n=b; //this.n
+		this.m=a; //this. 생략시 자동 추가
+		this.n=b; //this. 생략시 자동 추가
 	}
 	void work() {
-		init(2,3); //this.init(2,3)
+		this.init(2,3); //this. 생략시 자동 추가
 	}
 }
 public class ThisKeyword_1 {
